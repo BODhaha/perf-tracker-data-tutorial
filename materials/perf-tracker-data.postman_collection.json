@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "f48f9f3e-8db0-49d0-9c78-658f8803c909",
+		"name": "perf-tracker-data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "获取所有记录",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}api/timeRecord?pageIndex=0&limit=10",
+					"host": [
+						"{{localhost}}api"
+					],
+					"path": [
+						"timeRecord"
+					],
+					"query": [
+						{
+							"key": "pageIndex",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取一条记录",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}api/timeRecord/1",
+					"host": [
+						"{{localhost}}api"
+					],
+					"path": [
+						"timeRecord",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "创建一条记录",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"docId\": \"abc0\",\r\n    \"docSize\": 512000,\r\n    \"pageIndex\": 0,\r\n    \"zipParseTime\": {\r\n        \"time\": 0.752,\r\n        \"startTime\": 1652161512633,\r\n        \"endTime\": 1652161513385\r\n    },\r\n    \"pageParseTime\": {\r\n        \"time\": 0.752,\r\n        \"startTime\": 1652161514113,\r\n        \"endTime\": 1652161514865\r\n    },\r\n    \"pageRenderTime\": {\r\n        \"time\": 0.536,\r\n        \"startTime\": 1652161515545,\r\n        \"endTime\": 1652161516081\r\n    },\r\n    \"fileReadTime\": [\r\n        {\r\n            \"fileName\": \"fileName0\",\r\n            \"size\": 6144,\r\n            \"time\": 0.576,\r\n            \"startTime\": 1652161516881,\r\n            \"endTime\": 1652161517457\r\n        },\r\n        {\r\n            \"fileName\": \"fileName1\",\r\n            \"size\": 6144,\r\n            \"time\": 0.488,\r\n            \"startTime\": 1652161518049,\r\n            \"endTime\": 1652161518537\r\n        },\r\n        {\r\n            \"fileName\": \"fileName2\",\r\n            \"size\": 6144,\r\n            \"time\": 0.536,\r\n            \"startTime\": 1652161523289,\r\n            \"endTime\": 1652161523825\r\n        }\r\n    ],\r\n    \"imageParseTime\": [\r\n        {\r\n            \"format\": \"jpg\",\r\n            \"size\": 5120,\r\n            \"time\": 0.456,\r\n            \"startTime\": 1652161519073,\r\n            \"endTime\": 1652161519529,\r\n            \"name\": \"image0\"\r\n        },\r\n        {\r\n            \"format\": \"jpg\",\r\n            \"size\": 5120,\r\n            \"time\": 0.464,\r\n            \"startTime\": 1652161520033,\r\n            \"endTime\": 1652161520497,\r\n            \"name\": \"image1\"\r\n        }\r\n    ],\r\n    \"fontParseTime\": [\r\n        {\r\n            \"format\": \"ttf\",\r\n            \"size\": 7168,\r\n            \"time\": 0.488,\r\n            \"startTime\": 1652161521265,\r\n            \"endTime\": 1652161521753,\r\n            \"name\": \"font0\"\r\n        },\r\n        {\r\n            \"format\": \"ttf\",\r\n            \"size\": 7168,\r\n            \"time\": 0.456,\r\n            \"startTime\": 1652161522249,\r\n            \"endTime\": 1652161522705,\r\n            \"name\": \"font1\"\r\n        }\r\n    ],\r\n    \"imageRenderTime\": [\r\n        {\r\n            \"format\": \"jpg\",\r\n            \"size\": 7168,\r\n            \"time\": 0.528,\r\n            \"startTime\": 1652161525905,\r\n            \"endTime\": 1652161526433\r\n        },\r\n        {\r\n            \"format\": \"jpg\",\r\n            \"size\": 7168,\r\n            \"time\": 0.424,\r\n            \"startTime\": 1652161527089,\r\n            \"endTime\": 1652161527513\r\n        }\r\n    ],\r\n    \"textRenderTime\": [\r\n        {\r\n            \"startTime\": 1652161528265,\r\n            \"endTime\": 1652161528713,\r\n            \"time\": 0.448\r\n        },\r\n        {\r\n            \"startTime\": 1652161529153,\r\n            \"endTime\": 1652161529633,\r\n            \"time\": 0.48\r\n        },\r\n        {\r\n            \"startTime\": 1652161530113,\r\n            \"endTime\": 1652161530601,\r\n            \"time\": 0.488\r\n        },\r\n        {\r\n            \"startTime\": 1652161531105,\r\n            \"endTime\": 1652161531489,\r\n            \"time\": 0.384\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}api/timeRecord",
+					"host": [
+						"{{localhost}}api"
+					],
+					"path": [
+						"timeRecord"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "删除一条记录",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}api/timeRecords/1",
+					"host": [
+						"{{localhost}}api"
+					],
+					"path": [
+						"timeRecords",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "http://127.0.0.1:7001/"
+		}
+	]
+}

@@ -1,3 +1,8 @@
+# Egg.js 小实战
+
+## 目录结构
+
+```
 .
 ├── README.md
 ├── app
@@ -17,3 +22,4 @@
             └── home.test.js
 
 6 directories, 9 files
+```
