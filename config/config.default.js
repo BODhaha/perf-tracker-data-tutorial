@@ -24,6 +24,18 @@ module.exports = appInfo => {
     }
   }
 
+  config.mysql = {
+    client: {
+      host: 'localhost',
+      port: '3306',
+      user: 'root',
+      password: '986503',
+      database: 'perf_tracker',
+    },
+    app: true,
+    agent: false,
+  }
+  
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
