@@ -1,6 +1,7 @@
 # Egg.js 小实战
 
-详细文档合集地址：[Egg.js 小实战 ~~ ❀❀ ~~](https://www.wolai.com/pCFgwMGf9ZEM3tVpYrXt9N)
+详细文档合集地址：[Egg.js 小实战 ~~ ❀❀ ~~](https://www.wolai.com/nY1sc5QHKe6A9dGVSn3uD8)
+
 
 
 > 关于仓库主人，是个很哇塞的懒美人这件事，更新全凭运气，哈哈哈！！！
